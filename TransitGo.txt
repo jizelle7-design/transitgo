@@ -1,0 +1,56 @@
+TransitGo — Philippines flight and RoRo trip planner
+
+OPENING THE APP
+Open index.html in a modern browser. No build step, API key, or package
+installation is required.
+
+BOOKING SEARCH
+Choose an origin, destination, departure date, traveler count, and either
+Airplane or RoRo / Ferry. The app creates search links to 12Go and links to
+airline and ferry operator websites. It does NOT fetch live fares, schedules,
+seat inventory, sailings, or vehicle availability. The destination directory
+is a curated static list in script.js, not a live database or verified list of
+routes served by every provider. Provider websites are the source of truth.
+
+REAL-TIME DATA
+There is currently no TransitGo server-side database or operator data feed.
+Saved trips use browser local storage on the visitor's device. Internet access
+is needed for provider websites and WhatsApp, but a connection alone does not
+make TransitGo's curated destination list or booking links real-time.
+Real-time inventory requires an authorized API/feed from the relevant
+airlines, ferry operators, or booking aggregator, plus permission to display
+its data. Prices and capacity can change after any check; they cannot be
+guaranteed accurate at all times.
+
+HOTEL DISCOVERY
+The hotel finder queries the public OpenStreetMap Overpass service for named
+hotel, guest-house, hostel, motel, resort, or apartment map objects within
+about 8 km of the selected destination. It needs internet access and no API key
+or Google billing. Results are community-maintained, can be missing or out of
+date, and are not a complete hotel directory. OpenStreetMap does NOT provide
+nightly rates, date-specific room availability, or booking inventory. Confirm
+details and current prices with a booking provider before making plans.
+
+OpenStreetMap data is available under the Open Database License (ODbL). The
+page displays attribution and links to the license. The public Overpass service
+has usage limits and no availability guarantee; searches run only when the
+visitor submits the form. Do not send repeated automated requests or treat the
+results as guaranteed real-time hotel facts.
+
+RORO VEHICLES
+Choose a vehicle type to see it in the planner, then confirm the exact route,
+vehicle space, dimensions, documents, passenger tickets, and total fare with
+the ferry operator. Vehicle details are not automatically submitted to an
+operator booking system.
+
+BOOKING AND SAVED TRIPS
+Bookings and payments take place on external provider websites. TransitGo
+does not reserve seats or vehicles. Saved itineraries are reminders kept in
+this browser and are not tickets or reservations.
+
+CUSTOMER SUPPORT CHAT
+The "Ask us" widget provides a payment FAQ and opens a WhatsApp conversation
+with the TransitGo owner when a visitor sends a message. The owner replies
+personally. Messages are not stored or answered automatically on this website.
+The configured WhatsApp contact is published in the client-side app, so use a
+business number intended for public customer inquiries.
